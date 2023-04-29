@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: local
+  mvc:
+    pathmath:
+      matching-strategy: ant-patch-matcher
+  datasource:
+    url: jdbc:postgresql://localhost:5432/sprint_5
+    username: postgres
+    password: jucaprevost21112004
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate.default_schema: desafio
+    show-sql: true
